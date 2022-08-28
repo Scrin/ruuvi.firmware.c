@@ -1771,6 +1771,18 @@
     c_preprocessor_definitions="APPLICATION_MODE_LONGLIFE; NDEBUG"
     gcc_optimization_level="Optimize For Size" />
   <configuration
+    Name="Longmem"
+    c_preprocessor_definitions="APPLICATION_MODE_LONGMEM; NDEBUG"
+    gcc_optimization_level="Optimize For long mem" />
+  <configuration
+    Name="Minimal"
+    c_preprocessor_definitions="APPLICATION_MODE_MINIMAL; NDEBUG"
+    gcc_optimization_level="Minimalistic mode, broadcast only" />
+  <configuration
+    Name="10hz"
+    c_preprocessor_definitions="APPLICATION_MODE_10HZ; NDEBUG"
+    gcc_optimization_level="10hz mode, broadcast only" />
+  <configuration
     Name="Debug"
     c_preprocessor_definitions="DEBUG; DEBUG_NRF; RUUVI_RUN_TESTS"
     gcc_optimization_level="None" />

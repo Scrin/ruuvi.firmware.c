@@ -17,6 +17,10 @@
 #include "application_mode_longlife.h"
 #elif APPLICATION_MODE_LONGMEM
 #include "application_mode_longmem.h"
+#elif APPLICATION_MODE_MINIMAL
+#include "application_mode_minimal.h"
+#elif APPLICATION_MODE_10HZ
+#include "application_mode_10hz.h"
 #elif DEBUG
 #include "application_mode_debug.h"
 #endif

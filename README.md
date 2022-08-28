@@ -1,3 +1,19 @@
+# This fork adds following new firmware variants
+
+### [minimal](./src/application_config/application_mode_minimal.h)
+
+- optimized for longer battery life
+- 5s measurement & broadcadst interval
+- GATT functions disabled
+- history disabled
+
+### [10hz](./src/application_config/application_mode_10hz.h)
+
+- very fast measurements at terrible battery life
+- 100ms measurement & broadcadst interval
+- GATT functions disabled
+- history disabled
+
 # ruuvi.firmware.c
 Current git repository status:
 
