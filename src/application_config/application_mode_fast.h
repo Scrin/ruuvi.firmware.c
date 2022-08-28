@@ -1,0 +1,16 @@
+#ifndef APPLICATION_MODE_FAST_H
+#define APPLICATION_MODE_FAST_H
+
+#define APP_FW_VARIANT "+fast"
+
+#define APP_BLE_INTERVAL_MS (100U) // 100ms or 10hz
+
+#define APP_NUM_REPEATS 1
+
+#define APP_BATTERY_SAMPLE_MS (100ULL)
+
+#define APP_GATT_ENABLED (0U)
+
+#define RT_FLASH_ENABLED (0U)
+
+#endif

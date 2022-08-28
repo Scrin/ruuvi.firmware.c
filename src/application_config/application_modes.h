@@ -19,6 +19,10 @@
 #include "application_mode_longmem.h"
 #elif APPLICATION_MODE_UUID
 #include "application_mode_uuid.h"
+#elif APPLICATION_MODE_MINIMAL
+#include "application_mode_minimal.h"
+#elif APPLICATION_MODE_FAST
+#include "application_mode_fast.h"
 #elif DEBUG
 #include "application_mode_debug.h"
 #endif

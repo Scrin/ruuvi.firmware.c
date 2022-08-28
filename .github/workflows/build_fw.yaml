@@ -82,10 +82,14 @@ jobs:
           LLIFE="longlife"
           TEST="test"
           UUID="uuid"
+          MINIMAL="minimal"
+          FAST="fast"
           DEFAULTNAME="${PREFIX}_${DEFAULT}_${VERSION}"
           LLIFENAME="${PREFIX}_${LLIFE}_${VERSION}"
           TESTNAME="${PREFIX}_${TEST}_${VERSION}"
           UUIDNAME="${PREFIX}_${UUID}_${VERSION}"
+          MINIMALNAME="${PREFIX}_${MINIMAL}_${VERSION}"
+          FASTNAME="${PREFIX}_${FAST}_${VERSION}"
           BUILDPATH="src/targets/ruuvitag_b/armgcc"
           
           echo "all_artifacts=${VERSION}_binaries" >> $GITHUB_ENV
@@ -95,6 +99,10 @@ jobs:
           echo "llife_app_dfu=${LLIFENAME}_dfu_app.zip" >> $GITHUB_ENV
           echo "uuid_full_hex=${UUIDNAME}_full.hex" >> $GITHUB_ENV
           echo "uuid_app_dfu=${UUIDNAME}_dfu_app.zip" >> $GITHUB_ENV
+          echo "minimal_full_hex=${MINIMALNAME}_full.hex" >> $GITHUB_ENV
+          echo "minimal_app_dfu=${MINIMALNAME}_dfu_app.zip" >> $GITHUB_ENV
+          echo "fast_full_hex=${FASTNAME}_full.hex" >> $GITHUB_ENV
+          echo "fast_app_dfu=${FASTNAME}_dfu_app.zip" >> $GITHUB_ENV
           echo "test_full_hex=${TESTNAME}_full.hex" >> $GITHUB_ENV
           echo "test_app_dfu=${TESTNAME}_dfu_app.zip" >> $GITHUB_ENV
           echo "buildpath=${BUILDPATH}" >> $GITHUB_ENV
@@ -112,3 +120,7 @@ jobs:
             ${{ env.buildpath }}/${{ env.test_app_dfu }}
             ${{ env.buildpath }}/${{ env.uuid_full_hex }}
             ${{ env.buildpath }}/${{ env.uuid_app_dfu }}
+            ${{ env.buildpath }}/${{ env.minimal_full_hex }}
+            ${{ env.buildpath }}/${{ env.minimal_app_dfu }}
+            ${{ env.buildpath }}/${{ env.fast_full_hex }}
+            ${{ env.buildpath }}/${{ env.fast_app_dfu }}
